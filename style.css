@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Nav Bar*/
+
+.navbar-light1 {
+    box-shadow: 5px 5px 15px rgba(1, 13, 53, 0.8);
+    background-color: rgba(0, 19, 82, 0.8) !important;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+}
+
+/* Home */
+#home {
+    position: relative;
+    background-image: url("../img/img-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    background-attachment: fixed;
+    height: 620px;
+    width: 100%;
+
+}
+
+.overlay {
+    background-color: rgba(0, 19, 82, 0.3);
+    height: 620px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 5px 15px rgba(1, 13, 53, 0.9);
+}
+
+#home .container {
+    position: absolute;
+    top: 20vh;
+    color: white;
+
+}
+
+
+
+
+/*About*/
+
+.aboutinfo {
+    background-image: url("../img/img-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    min-height: 400px;
+    margin: 2rem auto;
+
+}
+
+/*Events*/
+#events .card {
+    height: 76%;
+    overflow: hidden;
+}
+
+#events .card img,
+#events .card h5,
+#events .card p {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+
+}
+
+#events .card:hover img,
+#events .card:hover h5,
+#events .card:hover p {
+    top: -100px;
+}
