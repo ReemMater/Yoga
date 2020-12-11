@@ -21,9 +21,9 @@
     <title>Bootstrap Theme | Yoga</title>
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#mainNav">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark navbar-light1">
+      <nav id="mainNav" class="navbar navbar-expand-md navbar-dark navbar-light1">
         <div class="container">
           <div class="brand">WorkOut</div>
           <button
@@ -171,6 +171,9 @@
         $(".navbar-collapse a").click(function () {
         $(".navbar-collapse").collapse("hide");
       });
+      
+        //Scroll Spy
+      $("body").scrollspy({ target: "#mainNav" });
     </script>
   </body>
 </html>
